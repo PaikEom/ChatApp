@@ -1,0 +1,137 @@
+@import url(../../variables.css);
+.singleUserTime {
+  display: flex;
+  align-items: top;
+  color: rgb(200, 200, 200);
+}
+.usernamePtag {
+  font-size: 22px;
+  font-weight: 600;
+}
+.datePtag {
+  font-size: 14px;
+  margin-left: 10px;
+}
+
+.singleUserTime p {
+  display: inline-block;
+}
+.messagePtag {
+  color: rgb(220, 220, 220);
+  font-size: 22px;
+  margin-right: 20px;
+}
+.messageUserEdit {
+  display: flex;
+  justify-content: space-between;
+  width: calc(100vw - 350px);
+}
+.mainMessageDiv {
+  display: flex;
+  padding: 10px;
+}
+.mainMessageDiv:hover {
+  transition: background-color 0.6s;
+  background-color: var(--primary-dark-background-color-hover2);
+}
+.mainMessageDiv:hover .singleMessageEdit {
+
+  opacity: 1;
+}
+.singleM-iDiv {
+  padding: 2px 5px 0px 5px;
+
+  margin-right: 5px;
+}
+.singleMessageEdit {
+  opacity: 0;
+  transition: opacity 1s;
+}
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+
+.popupMenu {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--primary-dark-background-color);
+  color: var(--font--color);
+  padding: 20px;
+  z-index: 1000;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-overflow: hidden;
+}
+
+.popupMenu ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.popupMenu li {
+  padding: 8px 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.popupMenu li:hover {
+  background-color: var(--primary-dark-background-color-hover);
+}
+
+.singleMessageOptions {
+  width: 200px;
+  position: absolute;
+  z-index: 2;
+  left: 95%;
+  margin-left: -60px;
+}
+.deleteInfoMain {
+  background-color: var(--primary-dark-background-color-hover);
+  max-width: 510px;
+  max-height: 500px;
+  padding: 5px;
+  display: flex;
+  align-items: start;
+  border-radius: 5px;
+}
+.userTime {
+  display: flex;
+  align-items: center;
+}
+.editMessageP {
+  max-width: 100%;
+  max-height: 350px;
+  overflow-y: auto;
+  margin-top: 3px;
+  margin-left: 8px;
+}
+.deleting {
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 700px) {
+  .messageUserEdit {
+    width: 100%;
+  }
+  .popupMenu {
+    max-width: 400px;
+    width: 95%;
+  }
+  .userMessageData {
+    width: 100%;
+  }
+  .messagePtag {
+    font-size: 18px;
+  }
+  .usernamePtag {
+    font-size: 18px;
+  }
+}

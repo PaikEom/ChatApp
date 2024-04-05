@@ -1,0 +1,60 @@
+.hoverable-icon-container {
+	position: relative;
+	display: inline-block;
+}
+
+.tooltip {
+	visibility: hidden;
+	width: 120px;
+	background-color: black;
+	color: white;
+	text-align: center;
+	border-radius: 6px;
+	padding: 5px;
+	position: absolute;
+	z-index: 1;
+	opacity: 0;
+	transition: opacity 1.4s;
+}
+
+.hoverable-icon-container:hover .tooltip {
+	visibility: visible;
+	opacity: 1;
+}
+
+/* Positioning for top tooltip */
+.tooltip.top {
+	bottom: 125%;
+	left: 50%;
+	margin-left: -60px;
+}
+
+/* Positioning for right tooltip */
+.tooltip.right {
+	top: 50%;
+	left: 125%;
+	transform: translate(0, -50%);
+}
+
+/* Positioning for bottom tooltip */
+.tooltip.bottom {
+	top: 135%;
+	left: 50%;
+	margin-left: -60px;
+}
+
+/* Positioning for left tooltip */
+.tooltip.left {
+	top: 50%;
+	right: 125%;
+	transform: translate(0, -50%);
+}
+
+.hoverable-icon-container:hover .tooltip {
+	visibility: visible;
+	opacity: 1;
+}
+
+.icon {
+	color: white;
+}

@@ -1,0 +1,118 @@
+@import url("../variables.css");
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+.p_title {
+  text-align: center;
+  font-size: 25px;
+  color: rgb(240, 240, 240);
+  font-weight: bold;
+}
+.registerForm {
+  background-color: #313338;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 35px;
+  width: 450px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+.registerInput {
+  background-color: #1e1f22;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  color: var(--font--color);
+  height: 40px;
+  padding: 10px;
+  font-size: 18px;
+}
+.inputInfo {
+  margin-bottom: 10px;
+}
+.labelDiv {
+  margin-left: 2px;
+  padding: 7px 0;
+}
+.labelDiv label {
+  color: rgb(240, 240, 240);
+  font-size: 18px;
+}
+.labelDiv label span {
+  color: red;
+  font-size: 12px;
+}
+.registerBtn {
+  background-color: #5865f2;
+  border: none;
+  height: 40px;
+  width: 100%;
+  padding: 7px;
+  border-radius: 5px;
+  margin-top: 15px;
+  font-size: 20px;
+  color: rgb(240, 240, 240);
+  cursor: pointer;
+}
+.registerBtn:hover {
+  background-color: #4b59ee;
+}
+.aDiv {
+  margin-top: 20px;
+  color: aqua;
+  cursor: pointer;
+}
+.aDiv:hover {
+  text-decoration: underline;
+}
+/* body {
+	background: url("../../images/background.jpg") center/cover fixed no-repeat;
+} */
+.backgroundImg {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pageImg {
+  background-image: url(../../images/DogBack.webp);
+}
+@media only screen and (max-width: 700px) {
+  .registerForm {
+    width: 90%;
+    max-width: 100%;
+    max-height: 95vh;
+    overflow-y: scroll;
+    margin: 0 auto;
+    position: relative;
+    top: initial;
+    left: initial;
+    transform: none;
+  }
+  .registerForm::-webkit-scrollbar {
+    display: none;
+  }
+  .hello {
+    overflow-y: scroll;
+    padding: 20px 0;
+  }
+}
+@media only screen and (max-width: 450px) {
+  .registerForm {
+    width: 98%;
+    padding: 15px;
+  }
+}
+/* @media only screen and (max-height: 700px) {
+  .registerForm {
+    margin-bottom: 0 100px;
+  }
+} */

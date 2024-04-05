@@ -1,0 +1,13 @@
+:root {
+  --primary-dark-background-color: #313338;
+  --primary-dark-background-color-hover: #4f5157;
+  --primary-dark-background-color-hover2: #292b2f;
+  --secondary-dark-background-color: #364765;
+  --secondary-dark-background-color-hover: #455a7f;
+  --accents-color: #a4abbd;
+  --font--color: #c8c8c8;
+  --font--color-hover: #ffffff;
+  --input-color: hsl(225 calc(1 * 6.3%) 12.5% / 1);
+
+  --transition-time: 0.5s;
+}

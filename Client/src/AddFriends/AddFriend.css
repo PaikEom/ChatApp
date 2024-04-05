@@ -1,0 +1,59 @@
+@import url("../variables.css");
+
+.directMessage {
+  padding: 15px 7px;
+}
+.addFriendText {
+  margin: 20px 10px;
+
+  font-weight: 500;
+}
+.addFriendP {
+  color: var(--font--color);
+  font-size: 20px;
+  margin: 20px 10px;
+}
+.friendInfoDiv {
+  padding-top: 10px;
+}
+.findPeopleDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.findPeople {
+  margin-top: 30px;
+  padding: 7px;
+  width: 100%;
+  background-color: var(--input-color);
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  border: 2px solid var(--secondary-dark-background-color);
+  margin-bottom: 10px;
+}
+.findPeople input {
+  border: none;
+  outline: none;
+  margin-left: 5px;
+  background-color: transparent;
+  color: white;
+  width: 100%;
+}
+.addFriendText {
+  color: white;
+}
+.findPeople button {
+  background-color: var(--secondary-dark-background-color);
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  min-width: 130px;
+  color: var(--font--color);
+  height: 100%;
+}
+.findPeople button:hover {
+  color: var(--font--color-hover);
+  background-color: var(--secondary-dark-background-color-hover);
+}

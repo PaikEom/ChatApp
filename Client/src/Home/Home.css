@@ -1,0 +1,51 @@
+@import url("../variables.css");
+.mainHomeDiv {
+  display: flex;
+  max-height: 100vh;
+}
+.rightSide {
+  width: 100%;
+  background-color: var(--primary-dark-background-color-hover);
+  overflow-y: auto;
+}
+.scrollRightSideColor::-webkit-scrollbar-track {
+  background-color: var(--primary-dark-background-color-hover);
+}
+
+body {
+  height: 100%;
+  width: 100%;
+}
+
+html {
+  overflow: hidden;
+  width: 100%;
+}
+
+.leftBar {
+  height: 100%;
+}
+@media only screen and (max-width: 700px) {
+  .mainHomeDiv {
+    flex-direction: column;
+    max-height: 100vh;
+  }
+
+  .leftBar {
+    width: 100%;
+    transition: left 5s;
+    max-height: 100vh;
+  }
+
+  .rightSide {
+    width: 100%;
+    display: block;
+    position: absolute;
+
+    height: 100%;
+    width: 100%;
+
+    z-index: 1000;
+    transition: left 5s;
+  }
+}

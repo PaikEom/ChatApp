@@ -1,0 +1,160 @@
+@import url("../variables.css");
+.chatNav-mainDiv {
+  background-color: var(--primary-dark-background-color);
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 50px;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  z-index: 150;
+  max-width: calc(100% - 280px);
+  box-shadow: 0 6px rgba(0, 0, 0, 0.1);
+}
+.chatNav-content ::-webkit-scrollbar {
+  display: none;
+}
+.convPtags {
+  font-weight: 600;
+  color: rgb(220, 220, 220);
+}
+.convNavInfo {
+  display: flex;
+  align-items: center;
+}
+.convNavInfo > * {
+  margin-left: 10px;
+}
+.convNavInfo:hover {
+  cursor: pointer;
+  filter: brightness(120%);
+}
+.chatNav-content {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.memberList {
+  position: absolute;
+  top: calc(100%);
+  left: calc(100% - 125px);
+  transform: translateX(-50%);
+  background-color: var(--primary-dark-background-color);
+  padding-left: 11px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  border-radius: 0 0 5px 5px;
+  width: 250px;
+  height: calc(100vh - 105px);
+  overflow-y: scroll;
+}
+.memberList > * {
+  margin-top: 10px;
+}
+.findUserOutDiv {
+  background-color: #1e1f22;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.groupMembersDiv {
+  border-radius: 5px;
+  background-color: var(--primary-dark-background-color-hover);
+}
+.groupMembersDiv:hover {
+  background-color: var(--primary-dark-background-color-hover2);
+  cursor: pointer;
+}
+.findUserInput {
+  height: 40px;
+  border: none;
+  outline: none;
+  background-color: transparent;
+  color: var(--font--color);
+}
+.findUserInput::placeholder {
+  color: var(--font--color);
+}
+.findUserIcon {
+  cursor: pointer;
+}
+.selectToGroupBtn {
+  margin-right: 5px;
+  width: 20px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+.selectionDiv {
+  background-color: var(--primary-dark-background-color-hover);
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+}
+
+.selectionDiv:hover {
+  cursor: pointer;
+  background-color: var(--primary-dark-background-color-hover2);
+}
+.navBtn {
+  background-color: var(--primary-dark-background-color);
+  padding: 2px;
+  border-radius: 5px;
+  color: var(--font--color);
+}
+
+.navBtn:hover {
+  filter: brightness(120%);
+  cursor: pointer;
+  transform: scale(1.1);
+  transition: transform 0.5s;
+}
+
+.navIcons > * {
+  margin-right: 20px;
+}
+.burgerMenu {
+  display: none;
+}
+.showNothing {
+  background-color: var(--primary-dark-background-color);
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 50px;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  z-index: 150;
+  max-width: calc(100% - 280px);
+  box-shadow: 0 6px rgba(0, 0, 0, 0.1);
+}
+@media only screen and (max-width: 700px) {
+  .chatNav-mainDiv {
+    max-width: 100%;
+    position: fixed;
+  }
+  .burgerMenu {
+    cursor: pointer;
+    display: block;
+  }
+  .showNothing {
+    display: none;
+  }
+  .memberList {
+    min-width: 100%;
+    left: 0;
+    transform: translateX(0);
+  }
+}

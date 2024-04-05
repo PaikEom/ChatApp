@@ -1,0 +1,59 @@
+@import url("../variables.css");
+
+.NavMainContainer {
+  background-color: var(--primary-dark-background-color);
+  display: flex;
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 50px;
+  justify-content: start;
+  align-items: center;
+  width: 100%;
+  max-width: calc(100% - 280px);
+  box-shadow: 0 6px rgba(0, 0, 0, 0.1);
+  z-index: 50;
+}
+.landingHeader {
+  overflow-x: auto;
+  overflow-y: hidden;
+  white-space: nowrap;
+  scrollbar-width: none;
+}
+.chatNav-content::-webkit-scrollbar {
+  display: none;
+}
+.landingHeader a:not(:last-child) {
+  margin-right: 5px;
+}
+.landingHeader a {
+  color: white;
+  margin-left: 10px;
+  text-decoration: none;
+  padding: 4px 10px;
+  border-radius: 8px;
+}
+.landingHeader a:hover {
+  cursor: pointer;
+  background-color: rgb(88, 101, 242);
+  filter: brightness(110%);
+}
+.burgerMenu {
+  color: white;
+  margin-left: 8px;
+}
+.burgerMenu:hover {
+  filter: brightness(150%);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 700px) {
+  .landingHeader {
+    width: 100%;
+  }
+  .NavMainContainer {
+    width: 100%;
+    max-width: 100%;
+    position: fixed;
+  }
+}

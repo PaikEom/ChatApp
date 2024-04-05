@@ -1,0 +1,36 @@
+.userInfoDiv {
+  width: 400px;
+  height: 400px;
+}
+.userInfoTop {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.infoForm {
+  background-color: #313338;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 35px;
+  width: 450px;
+  font-size: 20px;
+  border-radius: 5px;
+}
+@media only screen and (max-width: 700px) {
+  .infoForm {
+    width: 100%;
+    max-width: 100%;
+    max-height: 95vh;
+    overflow-y: scroll;
+    margin: 0 auto;
+    position: relative;
+    top: initial;
+    left: initial;
+    transform: none;
+  }
+  .infoForm::-webkit-scrollbar {
+    display: none;
+  }
+}
